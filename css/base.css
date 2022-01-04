@@ -1,0 +1,53 @@
+:root {
+    --horizontal-margins: 200px;
+    --main-font: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: var(--main-font);
+    background-image: url(../resources/body-background.jpeg);
+    background-repeat: repeat;
+    color: white;
+}
+
+main {
+    text-align: center;
+    margin: 0 var(--horizontal-margins) 0 var(--horizontal-margins);
+}
+
+/*main elements of the website*/
+h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*designing the header/navbar*/
+#nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav li a {
+    margin: 0 5px 0 5px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+#nav li a:hover {
+    text-decoration: underline;
+}
