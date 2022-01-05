@@ -11,7 +11,7 @@ function randomItem(object) {
 
 async function setQuote() {
     //opening the .json file
-    let quotesRespouse = await fetch("web/resources/quotes.json")
+    let quotesRespouse = await fetch("resources/quotes.json")
     let quotes = await quotesRespouse.json()
 
     //getting the html elements
@@ -23,7 +23,7 @@ async function setQuote() {
 
     //getting a random quote
     var movie = randomItem(quotes)
-    image.src = "web/resources/" + movie[movie.length - 1] //last element contain the image path
+    image.src = "resources/" + movie[movie.length - 1] //last element contain the image path
     paragraph.innerHTML = movie[random(0, movie.length - 2)]
 }
 
