@@ -1,5 +1,4 @@
 :root {
-    --horizontal-margins: 200px;
     --main-font: 'Courier New', Courier, monospace;
 }
 
@@ -12,7 +11,7 @@ body {
 
 main {
     text-align: center;
-    margin: 0 var(--horizontal-margins) 0 var(--horizontal-margins);
+    margin: 0 5% 0 5%;
 }
 
 /*main elements of the website*/
@@ -50,4 +49,14 @@ p {
 
 #nav li a:hover {
     text-decoration: underline;
+}
+
+.image {
+    width: 30%;
+}
+
+@media screen and (max-width: 1400px) {
+    .image {
+        width: 60%;
+    }
 }
