@@ -23,8 +23,8 @@ async function setQuote() {
 
     //getting a random quote
     var movie = randomItem(quotes)
-    image.src = "resources/" + movie[movie.length - 1] //last element contain the image path
-    paragraph.innerHTML = movie[random(0, movie.length - 2)]
+    image.src = "resources/quote-gifs/" + movie[1][random(0, movie[1].length)]
+    paragraph.innerHTML = movie[0][random(0, movie[0].length)]
 }
 
 setQuote()

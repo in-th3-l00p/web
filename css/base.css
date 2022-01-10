@@ -60,3 +60,9 @@ p {
         width: 60%;
     }
 }
+
+@media screen and (max-width: 645px) {
+    .image {
+        width: 90%;
+    }
+}

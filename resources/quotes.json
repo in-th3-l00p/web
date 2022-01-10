@@ -1,11 +1,27 @@
 {
     "Mr. Robot": [[
-        "“We’re all living in each other’s paranoia.” — Elliot Alderson, Mr. Robot"
-    ], "elliotpolice.gif"],
+        "“We’re all living in each other’s paranoia.” — Elliot Alderson, Mr. Robot",
+        "“When you delete something, you’re making a choice to destroy it. To never see it again.” — Elliot Alderson, Mr. Robot",
+        "“Maybe wars aren't meant to be won, maybe they're meant to be continuous.” — Elliot Alderson, Mr. Robot",
+        "“Life is so much easier when you’re numb.” — Elliot Alderson, Mr. Robot"
+    ], ["elliotpolice.gif", "elliotidk.gif", "elliotsmoking.gif", "elliottalking.gif"]],
     "Peaky Blinders": [[
-        "“You have to get what you want your own way.” — Tommy Shelby, Peaky Blinders"
-    ], "shelby.gif"],
-    "My stranger things": [[
-        "“Mornings are for coffee and contemplation.” – Jim Hopper (David Harbour), Stranger Things"
-    ], "strangerthingssmile.gif"]
+        "“You have to get what you want your own way.” — Tommy Shelby, Peaky Blinders",
+        "“Ambition for respectability doesn’t make you a saint.” — Father John Hughes, Peaky Blinders",
+        "“Five for peace, two for truce, one abstention. Let’s get on with the war.” — Tommy Shelby, Peaky Blinders",
+        "“There’s business and there’s love.” — Grace Burgess, Peaky Blinders",
+        "“The only way to guarantee peace is by making the prospect of war seem hopeless.” — Tommy Shelby, Peaky Blinders"
+    ], ["shelby.gif", "shelbywalking.gif", "tomwalking.gif", "pollyaiming.gif"]],
+    "Stranger things": [[
+        "“Mornings are for coffee and contemplation.” —  Jim Hopper, Stranger Things",
+        "“Yeah, the real world sucks, deal with it like the rest of us.” — Jonathan Byers, Stranger Things",
+        "“It’s gonna be okay. Remember, Bob Newby, superhero.” — Bob Newby, Stranger Things",
+        "“This is not a normal family.” — Joyce Byers, Stranger Things"
+    ], ["strangerthingssmile.gif", "strangerthingsmax.gif", "strangerthingslights.gif", "hopper.gif", "eleven.gif", "robin.gif"]],
+    "La casa de papel": [[
+        "“The second any blood is shed, we’ll no longer be Robin Hood, but just a bunch of plain punks.” —  The Professor, Money Heist",
+        "“If you had to pick between your integrity and oxygen, what would you choose?” —  Palermo, Money Heist",
+        "“In the end, love is a good reason for everything to fall apart.” —  Tokyo, Money Heist",
+        "“Technology is fought with technology.” —  Palermo, Money Heist"
+    ], ["lacasadepapelguns.gif", "lacasadepapelshooting.gif", "profesor.gif", "tokyo.gif"]]
 }
