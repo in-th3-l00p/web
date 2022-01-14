@@ -1,0 +1,30 @@
+:root {
+    --image-margin: 10px;
+    --section-margin: 40px;
+}
+
+a {
+    color: #cccccc;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    margin-top: var(--image-margin);
+    margin-bottom: var(--image-margin);
+}
+
+section {
+    margin-top: var(--section-margin);
+    margin-bottom: var(--section-margin);
+}
+
+.output {
+    width: 60vw;
+}
+
+.upper-space {
+    margin-top: 10px;
+}

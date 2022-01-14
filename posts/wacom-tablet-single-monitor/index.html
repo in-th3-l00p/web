@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intheloop personal website</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>in-the-loop</h1> 
+            <div> <ul id="nav">
+                    <li><a href="../../index.html">home</a></li>
+                    <li><a href="../../posts.html">posts</a></li>
+                    <li><a href="../../contact.html">contact</a></li>
+            </div> </ul> 
+
+            <h2 style="text-decoration: underline;">
+                Map a Wacom tablet to a single monitor on linux
+            </h2>
+        </header>
+
+        <section>
+            <p>
+                By default, a Wacom graphics tablet that runs on Linux is mapped on the all the monitors plugged
+                in that computer.
+            </p>
+
+            <p>First, for mapping the tablet to a single display, you need to find the name of that monitor</p>
+            <p>
+                "xrandr" - a primitive command line interface to the 
+                <a href="https://en.wikipedia.org/wiki/X.Org_Server#Other_DDX_components">RandR</a> extension
+                is useful finding the displays' name
+            </p>
+        </section>
+
+        <section>
+            <p>This is the output that I get when running "xrandr": </p>
+            <img class="output" src="resources/xrandr-output.png">
+            <p>
+                In this picture, the monitors' names that are plugged to my computer are: "DVI-D-0" and
+                "HDMI-0".
+            </p>
+            <p>In this example, I am going to map my tablet to "HDMI-0"</p>
+
+            <p class="upper-space">
+                Also, you can use the "--listactivemonitors" on "xrandr" to get a prettier output:
+            </p>
+            <img class="output" style="margin-bottom: 0;" src="resources/xrandr-betteroutput.png">
+        </section>
+        
+        <section>
+            <p>Next step is finding the device id of the graphics tablet</p>
+            <p>
+                For this, you can either use 
+                <a href="https://linux.die.net/man/1/xinput">"xinput"</a> or 
+                <a href="https://linux.die.net/man/1/xsetwacom">xsetwacom"</a>
+            </p>
+
+            <p class="upper-space">
+                For "xinput" just type it's name in your terminal for seeing the devices' ids
+            </p>
+            <img class="output" src="resources/xinput-output.png">
+
+            <p class="upper-space">
+                For "xsetwacom", type "xsetwacom" with the "list devices" "argument" ("xsetwacom list devices")
+            </p>
+            <img class="output" src="resources/xsetwacomlistdevices-output.png">
+            <p>Important: In both cases, you need to get the id of the pen (stylus), not the graphics tablet</p>
+        </section>
+
+        <section>
+            <p>The final step is mapping the monitor</p>
+            <p>For this, as you did in the last step, you can use "xinput" or "xsetwacom"</p>
+
+            <p class="upper-space">For "xinput", the command that maps the tablet is "xinput map-to-output {the id of the pen} {the monitor name}</p>
+            <p>In my case, the command is: "xinput map-to-output 15 HDMI-0"</p>
+
+            <p class="upper-space">For "xsetwacom", the command is: "xsetwacom set {pen id} MapToOutput {monitor name}"</p>
+            <p>In my case, the command is: "xsetwacom set 15 MapToOutput HDMI-0"</p>
+        </section>
+
+        <section>
+            <p>
+                Following this steps, your Wacom graphics tablet should be mapped on a single monitor. Place the last command
+                in your ".bashrc" file if you want to always have the tablet mapped to that monitor.
+            </p>
+            <p>For more informations I suggest that you read the Arch wiki page about Wacom tablets:</p>
+            <a href="https://wiki.archlinux.org/title/Wacom_tablet">https://wiki.archlinux.org/title/Wacom_tablet</a>
+        </section>
+
+        <footer><h3>Thanks for reading</h3></footer>
+    </main>
+</body>
+</html>

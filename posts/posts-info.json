@@ -1,1 +1,7 @@
-{}
+{
+    "wacom-tablet-single-monitor": {
+        "title": "Map a Wacom tablet to a single monitor on linux",
+        "description": "Guide on configuring wacom drivers for mapping a Wacom tablet to a single monitor on linux",
+        "index": "posts/wacom-tablet-single-monitor/index.html"
+    }
+}
